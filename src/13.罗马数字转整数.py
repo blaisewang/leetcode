@@ -17,17 +17,8 @@ class Solution:
              "D": 500,
              "M": 1000}
 
-        int_sum = 0
-        last_r = 1001
+        ns = [d[r] for r in s]
 
-        for r in s:
-            int_sum += d[r]
-
-            if d[r] > last_r:
-                int_sum -= 2 * last_r
-
-            last_r = d[r]
-
-        return int_sum
+        return sum(-ns[i] if ns[i] < ns[i + 1] else ns[i] for i in range(len(s) - 1)) + ns[-1]
 
 # @lc code=end

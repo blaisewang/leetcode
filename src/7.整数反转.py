@@ -8,17 +8,14 @@
 class Solution:
     def reverse(self, x: int) -> int:
 
-        s = str(abs(x))
-
-        r = int(s[::-1])
+        r = int(str(abs(x))[::-1])
 
         if x < 0:
             r = -r
 
         if -2 ** 31 <= r <= 2 ** 31 - 1:
             return r
-        
-        return 0
-        
-# @lc code=end
 
+        return 0
+
+# @lc code=end

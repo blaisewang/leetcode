@@ -53,6 +53,5 @@ class Solution:
                 return prefix
 
         return prefix
-        
-        
+
 # @lc code=end
