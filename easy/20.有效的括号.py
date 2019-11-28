@@ -58,11 +58,11 @@
 # @lc code=start
 class Solution:
     def isValid(self, s: str) -> bool:
+
+        stack = []
         r_l_dict = {")": "(",
                     "}": "{",
                     "]": "["}
-
-        stack = []
 
         for p in s:
             if p not in r_l_dict:

@@ -45,6 +45,7 @@ from collections import deque
 
 class Solution:
     def minDepth(self, root: TreeNode) -> int:
+
         if not root:
             return 0
 

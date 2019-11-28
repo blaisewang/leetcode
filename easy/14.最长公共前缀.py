@@ -42,9 +42,9 @@ from typing import List
 
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-        min_len = len(min(strs, key=len, default=""))
 
         prefix = ""
+        min_len = len(min(strs, key=len, default=""))
 
         for i in range(min_len):
             if all(x[i] == strs[0][i] for x in strs):

@@ -33,8 +33,8 @@
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
 
-        prevhead = ListNode(-1)
-        prev = prevhead
+        head = ListNode(-1)
+        prev = head
 
         while l1 and l2:
             if l1.val <= l2.val:
@@ -47,6 +47,6 @@ class Solution:
 
         prev.next = l1 if l1 is not None else l2
 
-        return prevhead.next
+        return head.next
 
 # @lc code=end

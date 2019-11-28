@@ -49,8 +49,8 @@
 # @lc code=start
 class Solution:
     def countAndSay(self, n: int) -> str:
-        count_l = ["1"]
 
+        count_l = ["1"]
         for _ in range(n - 1):
             last = count_l[-1]
             current = ""

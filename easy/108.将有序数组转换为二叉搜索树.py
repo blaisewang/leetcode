@@ -42,6 +42,7 @@
 
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> TreeNode:
+
         if nums:
             m = len(nums) // 2
             r = TreeNode(nums[m])

@@ -41,4 +41,3 @@ class Solution:
         return 2 * sum(set(nums)) - sum(nums)
 
 # @lc code=end
-

@@ -30,8 +30,8 @@
 # @lc code=start
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        split = s.split()
 
+        split = s.split()
         if not split:
             return 0
 

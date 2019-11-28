@@ -62,10 +62,12 @@ class Solution:
     def isBalanced(self, root: TreeNode) -> bool:
 
         def height(node: TreeNode) -> int:
+
             if not node:
                 return 0
 
             l, r = map(height, [node.left, node.right])
+
             return max(l, r) + 1 if min(l, r) > -1 and abs(l - r) <= 1 else -1
 
         return False if height(root) == -1 else True
