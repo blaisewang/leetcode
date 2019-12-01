@@ -49,7 +49,6 @@ from typing import List
 
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
-
         return len([num for num in nums if num < target])
-        
+
 # @lc code=end

@@ -60,9 +60,7 @@
 
 class Solution:
     def isBalanced(self, root: TreeNode) -> bool:
-
         def height(node: TreeNode) -> int:
-
             if not node:
                 return 0
 

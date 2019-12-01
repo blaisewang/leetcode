@@ -42,7 +42,6 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-
         t = p = 0
         for i in range(len(prices) - 1):
             t = max(0, prices[i + 1] - prices[i] + t)

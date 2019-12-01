@@ -44,7 +44,7 @@ class Solution:
                 temp += nums[i]
             else:
                 temp = nums[i]
-            
+
             max_sum = max(max_sum, temp)
 
         return max_sum
