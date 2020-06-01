@@ -34,6 +34,7 @@
 # 
 #
 
+
 # @lc code=start
 class Solution:
     def checkPerfectNumber(self, num: int) -> bool:

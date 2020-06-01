@@ -30,6 +30,7 @@
 # 
 #
 
+
 # @lc code=start
 # The guess API is already defined for you.
 # @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
