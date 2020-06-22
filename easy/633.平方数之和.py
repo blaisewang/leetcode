@@ -34,6 +34,7 @@
 # 
 #
 
+
 # @lc code=start
 class Solution:
     def judgeSquareSum(self, c: int) -> bool:

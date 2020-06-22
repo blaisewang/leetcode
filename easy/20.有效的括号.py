@@ -59,22 +59,21 @@
 # @lc code=start
 class Solution:
     def isValid(self, s: str) -> bool:
-
-        stack = []
+        s = []
         r_l_dict = {")": "(",
                     "}": "{",
                     "]": "["}
 
         for p in s:
             if p not in r_l_dict:
-                stack.append(p)
+                s.append(p)
             else:
-                if stack and r_l_dict[p] == stack[-1]:
-                    stack.pop()
+                if s and r_l_dict[p] == s[-1]:
+                    s.pop()
                 else:
                     return False
 
-        if not stack:
+        if not s:
             return True
 
         return False

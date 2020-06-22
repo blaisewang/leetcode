@@ -42,7 +42,6 @@ from typing import List
 
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-
         prefix = ""
         min_len = len(min(strs, key=len, default=""))
 

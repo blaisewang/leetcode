@@ -34,7 +34,6 @@ from typing import List
 
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-
         temp = nums[0]
         max_sum = temp
 

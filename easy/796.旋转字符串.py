@@ -35,6 +35,7 @@
 # 
 #
 
+
 # @lc code=start
 class Solution:
     def rotateString(self, A: str, B: str) -> bool:

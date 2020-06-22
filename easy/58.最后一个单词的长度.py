@@ -27,6 +27,7 @@
 # 
 #
 
+
 # @lc code=start
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
