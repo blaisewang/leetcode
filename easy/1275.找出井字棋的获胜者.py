@@ -91,8 +91,44 @@
 #
 
 # @lc code=start
+from typing import List
+
+
 class Solution:
     def tictactoe(self, moves: List[List[int]]) -> str:
-        
-# @lc code=end
+        wins = [
+            [(0, 0), (0, 1), (0, 2)],
+            [(1, 0), (1, 1), (1, 2)],
+            [(2, 0), (2, 1), (2, 2)],
+            [(0, 0), (1, 0), (2, 0)],
+            [(0, 1), (1, 1), (2, 1)],
+            [(0, 2), (1, 2), (2, 2)],
+            [(0, 0), (1, 1), (2, 2)],
+            [(0, 2), (1, 1), (2, 0)],
+        ]
 
+        def win_check(S):
+            for win in wins:
+                flag = True
+                for pos in win:
+                    if pos not in S:
+                        flag = False
+                        break
+                if flag:
+                    return True
+            return False
+
+        a, b = set(), set()
+        for i, (x, y) in enumerate(moves):
+            if i % 2 == 0:
+                a.add((x, y))
+                if win_check(a):
+                    return "A"
+            else:
+                b.add((x, y))
+                if win_check(b):
+                    return "B"
+
+        return "Draw" if len(moves) == 9 else "Pending"
+
+# @lc code=end
