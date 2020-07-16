@@ -53,9 +53,11 @@
 # 
 #
 
-
 # @lc code=start
 # Definition for a binary tree node.
+from typing import Union
+
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -65,7 +67,7 @@ class TreeNode:
 
 class Solution:
     def longestConsecutive(self, root: TreeNode) -> int:
-        def traverse(n: TreeNode, p: TreeNode, l: int) -> int:
+        def traverse(n: Union[TreeNode, None], p: Union[TreeNode, None], l: int) -> int:
             if n is None:
                 return l
 

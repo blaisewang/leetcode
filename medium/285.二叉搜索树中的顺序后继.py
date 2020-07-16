@@ -51,6 +51,9 @@
 
 # @lc code=start
 # Definition for a binary tree node.
+from typing import Union
+
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -59,7 +62,7 @@ class TreeNode:
 
 
 class Solution:
-    def inorderSuccessor(self, root: TreeNode, p: TreeNode) -> TreeNode:
+    def inorderSuccessor(self, root: TreeNode, p: TreeNode) -> Union[TreeNode, None]:
         c = root
         s = []
         while c:
