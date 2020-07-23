@@ -62,4 +62,3 @@ class Solution:
         return N % 2 == 0
 
 # @lc code=end
-    
